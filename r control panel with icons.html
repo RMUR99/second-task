@@ -1,0 +1,81 @@
+<html>
+<title>ControlPanel</title>
+<h1 style="color:white;" align="center"> Control Panel for robot</h1>
+<style>
+body {
+background-image: url('futurism.jpg');
+background-repeat : no-repeat  ;
+background-attachment : fixed ; 
+background-size : 100% 100%
+
+}
+button
+{
+font-size: 20px;
+padding:10px;
+border-radius:10px;
+margin:20px;
+}
+#forward
+{
+text-align:center;
+}
+#stop
+{
+text-align:center;
+}
+#backward
+{
+text-align:center;
+}
+#right
+{
+position: fixed;
+left:55%;
+top:25%;
+}
+
+#left
+{
+position: fixed;
+right:55%;
+top:25%;
+}
+
+
+</style>
+<body>
+<div id="forward">
+<button id="1">forward</button>
+</div>
+
+<div id="stop">
+<button id="2">stop</button>
+</div>
+
+<div id="backward">
+<button id="3">backward</button>
+</div>
+
+<div id="right">
+<button id="4">right</button>
+</div>
+
+<div id="left">
+<button id="5">left</button>
+</div>
+</body>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "95f057aa-3410-4bb6-8deb-66e7eb3a91f4", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "5e7f357a-38c1-4e1b-93cf-e759a970a71b", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</html>
