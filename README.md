@@ -1,5 +1,4 @@
 # task2
 control panel with buttons
-
-sql that is connected to the html 
+created an sql with the name positions
 i faced issues with coding
